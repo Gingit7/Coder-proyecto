@@ -1,0 +1,517 @@
+/* Para resetear desde cero */
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    /*modificado */
+    /*    width: 1440px;*/
+    width: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none
+}
+
+/* Header */
+
+header {
+    background-color: rgb(186, 85, 211);
+}
+
+.container-header {
+    /* background-color: deeppink; */
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+
+
+.container-header h1 {
+    text-align: end;
+    color: white;
+    width: 90%;
+    font-size: 4rem;
+
+}
+
+/* Fondo del espacio de buscador */
+.container-header .buscador-header {
+    width: 78%;
+}
+
+/* Buscar en el Header */
+.container-header .buscador-header input {
+    /*modificado */
+    width: 80%;
+    height: 1cm;
+    margin-top: 0.8cm;
+    margin-left: 1.0cm;
+    border-radius: 8px 8px;
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 830px) {
+    .container-header h1 {
+        font-size: 1.5rem;
+        position: relative;
+        right: 10cm;
+        top: 0.5cm;
+    }
+
+    .container-header {
+        display: block;
+    }
+
+    .buscador-header {
+        padding-bottom: 1cm;
+    }
+}
+
+/* Main */
+
+main {
+    background-color: rgb(241, 223, 223);
+    height: 28cm;
+}
+
+main nav {
+    height: 2cm;
+    display: block;
+}
+
+main nav .nav {
+
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+@media screen and (max-width: 881px) {
+    main nav .nav {
+        display: block;
+        margin-bottom: 9cm;
+    }
+}
+
+
+main .imagenprincipal {
+    background-image: url("../img/principal.png");
+    height: 50%;
+    width: 80%;
+    margin: 0 auto;
+    border: solid 1px;
+    border-radius: 10px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 881px) {
+
+    main .imagenprincipal {
+        margin-top: 4cm;
+    }
+}
+
+
+main h2 {
+    position: relative;
+    bottom: 7cm;
+    height: 10%;
+    width: 50%;
+    left: 3%;
+    color: white;
+    font-size: 3.0rem;
+    text-justify: distribute;
+    text-align: center;
+}
+
+@media screen and (max-width: 975px) {
+    main h2 {
+        bottom: 10cm;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main h2 {
+        font-size: 2rem;
+    }
+}
+
+main .agencias {
+    margin-top: -2cm;
+    height: 9cm;
+    border: solid 5px rgb(186, 85, 211);
+}
+
+main .agencias h3 {
+    color: rgb(186, 85, 211);
+    font-size: 2.5rem;
+    text-align: start;
+    margin-left: 1cm;
+}
+
+@media screen and (max-width:975px) {
+    main .agencias h3 {
+        margin-left: 30%;
+    }
+}
+
+main .agencias .background-agencia {
+    height: 70%;
+    width: 95%;
+    background-color: rgb(186, 85, 211);
+    margin: 15px;
+    border-radius: 10px 10px;
+}
+
+@media screen and (max-width:975px) {
+    main {
+        margin-bottom: 5cm;
+        height: 40cm;
+    }
+
+
+    main .agencias {
+        height: 14cm;
+    }
+
+
+    main .agencias .background-agencia {
+        height: 80%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    main .agencias .background-agencia .tarjeta-agencias1 {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    main .tarjeta-agencias2 {
+        width: 50px;
+        height: 50px;
+    }
+
+    main .tarjeta-agencias3 {
+        width: 50px;
+        height: 50px;
+    }
+
+    main .tarjeta-agencias4 {
+        width: 50px;
+        height: 50px;
+    }
+
+    main .tarjeta-agencias5 {
+        width: 50px;
+        height: 50px;
+    }
+
+    main .tarjeta-agencias6 {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    main {
+        margin-bottom: 5cm;
+        height: 55cm;
+    }
+
+
+    main .agencias {
+        height: 18cm;
+    }
+
+
+    main .agencias .background-agencia {
+        height: 80%;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+main .agencias .background-agencia .tarjeta-agencias1 {
+    background-color: rgb(186, 85, 211);
+    background-image: url("../img/index.png");
+    background-repeat: no-repeat;
+    border-radius: 0.1px;
+    border: 10px solid white;
+    overflow: hidden;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    margin-right: 0.5cm;
+    margin-left: 1cm;
+    margin-top: 0.5cm;
+
+}
+
+main .tarjeta-agencias2 {
+    background-color: rgb(186, 85, 211);
+    background-image: url("../img/vk.png");
+    background-repeat: no-repeat;
+    border-radius: 0.1px;
+    border: 10px solid white;
+    overflow: hidden;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    margin-right: 0.5cm;
+    margin-left: 1cm;
+    margin-top: 0.5cm;
+
+}
+
+main .tarjeta-agencias3 {
+    background-color: rgb(186, 85, 211);
+    background-image: url("../img/lupe.png");
+    background-repeat: no-repeat;
+    border-radius: 0.1px;
+    border: 10px solid white;
+    overflow: hidden;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    margin-right: 0.5cm;
+    margin-left: 1cm;
+    margin-top: 0.5cm;
+
+}
+
+main .tarjeta-agencias4 {
+    background-color: rgb(186, 85, 211);
+    background-image: url("../img/galarreta.png");
+    background-repeat: no-repeat;
+    border-radius: 0.1px;
+    border: 10px solid white;
+    overflow: hidden;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    margin-right: 0.5cm;
+    margin-left: 1cm;
+    margin-top: 0.5cm;
+}
+
+main .tarjeta-agencias5 {
+    background-color: rgb(186, 85, 211);
+    background-image: url("../img/adamas.png");
+    background-repeat: no-repeat;
+    border-radius: 0.1px;
+    border: 10px solid white;
+    overflow: hidden;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    margin-right: 0.5cm;
+    margin-left: 1cm;
+    margin-top: 0.5cm;
+}
+
+main .tarjeta-agencias6 {
+
+    background-color: deeppink;
+    background-image: url("../img/2510.png");
+    background-repeat: no-repeat;
+    border-radius: 0.1px;
+    border: 10px solid white;
+    overflow: hidden;
+    background-size: contain;
+    display: inline-block;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    margin-right: 0.5cm;
+    margin-left: 1cm;
+    margin-top: 0.5cm;
+}
+
+/* main .tarjeta-agencias7 { 
+    background-color: deeppink;
+    background-image: url("../img/index.png");
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    border: 10px solid white;
+    overflow: hidden;
+    padding: 5cm;
+    display: inline-block;
+    background-position: center;
+    margin: 30px;
+
+}
+
+main .tarjeta-agencias8 {
+    background-color: deeppink;
+    background-image: url("../img/vk.png");
+    background-repeat: no-repeat;
+    border-radius: 0.1px;
+    border: 10px solid white;
+    overflow: hidden;
+    padding: 5cm;
+    display: inline-block;
+    background-position: center;
+    margin: 30px;
+}
+
+main .tarjeta-agencias9 {
+    background-color: deeppink;
+    background-image: url("../img/lupe.png");
+    background-repeat: no-repeat;
+    border-radius: 0.1px;
+    border: 10px solid white;
+    overflow: hidden;
+    padding: 5cm;
+    display: inline-block;
+    background-position: center;
+    margin: 30px;
+}
+
+*/
+
+/* Footer */
+
+
+
+footer {
+    margin-top: -1cm;
+    height: 8cm;
+    background-color: rgb(186, 85, 211);
+    padding: 2px 6px 20px 6px;
+
+}
+
+footer .subfooter {
+    height: 90%;
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    display: inline-block;
+}
+
+footer .subfooter h2 {
+    font-size: 1.4em;
+    color: white;
+    margin-bottom: 8px;
+    display: block;
+}
+
+footer .subfooter .containerimagenes {
+    height: 90%;
+}
+
+footer .subfooter .containerimagenes p {
+    font-size: 1.4em;
+    color: white;
+    margin-top: 30px;
+    float: left
+}
+
+footer .subfooter .containerimagenes .footer-facebook {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_de_Facebook.png/220px-Logo_de_Facebook.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    margin-left: 3cm;
+    position: relative;
+    top: 20px;
+    border-radius: 25px 25px;
+}
+
+footer .subfooter .containerimagenes .footer-twitter {
+    background-image: url("https://pbs.twimg.com/profile_images/378800000041711687/d6050eb6ce3f141847fe200a914205bc_400x400.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    margin-left: 3cm;
+    position: relative;
+    top: 30px;
+    border-radius: 25px 25px;
+}
+
+footer .subfooter .containerimagenes .footer-instagram {
+    background-image: url("https://elordenmundial.com/wp-content/uploads/2021/10/instagram-aplicacion-tecnologia-lanzamiento-sociedad-historia.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    margin-left: 3cm;
+    position: relative;
+    top: 35px;
+    border-radius: 25px 25px;
+}
+
+footer .subfooter .containerimagenes .footer-youtube {
+    background-image: url("https://play-lh.googleusercontent.com/GnYnNfKBr2nysHBYgYRCQtcv_RRNN0Sosn47F5ArKJu89DMR3_jHRAazoIVsPUoaMg=w240-h480-rw");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    margin-left: 3cm;
+    position: relative;
+    top: 40px;
+    border-radius: 25px 25px;
+
+
+
+}
+
+footer .subfooter .derechos {
+    color: white;
+    text-align: right;
+
+}
+
+footer div .newslatter {
+    /*    text-align: right;*/
+    /*    float: right;*/
+    color: white;
+
+    /*display: flex;*/
+
+
+}
+
+.flex {
+    display: flex;
+}
+
+/* Modificación de Contacto  */
+
+header h1 .tituloprincipal {
+    text-align: center;
+
+}
+
+header h2 .titulosecundario {
+    text-align: center;
+}
+
+header p .contacto {
+    text-align: center;
+
+}
