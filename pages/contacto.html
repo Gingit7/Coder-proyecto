@@ -5,70 +5,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Comando para linkear con el css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-
     <title>Contacto</title>
 </head>
 
 <body>
 
-    <header>
-        <h1 class="tituloprincipal">Contacto</h1>
-        <h2 class="titulosecundario">¿En que podemos ayudarte?</h2>
-        <p>Contanos qué estas buscando o preguntanos tus dudas</p>
-        <p>Te contactaremos lo antes posible.</p>
+    <section class="contacto-mensaje">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MSHOPS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/documentacion.html">Documentación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/soporte.html">Soporte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/deploys.html">Deploys</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h1>Contacto</h1>
+        <h2>¿En que podemos ayudarte?</h2>
+
+        <div class="row"></div>
+
+        <p class="col-12">Contanos qué estas buscando o preguntanos tus dudas</p>
+        <p class="col -12">Te contactaremos lo antes posible.</p>
+    </section>
+
+    <main>
+
+        <form action="">
+
+            <div class="w-25 border">
+                <label for="nombre-usuario">Nombre y Apellido</label>
+                <input type="text" id="nombre-usuario" placeholder="Maria Perez">
+            </div>
+
+            <div class="w-25 border m-25">
+                <label for="email-usuario">Email</label>
+                <input type="email" id="email-usuario" placeholder="email@ejemplo.com">
+            </div>
+
+            <div class="w-25 border ">
+                <label for="Ingrese-consulta ">Ingrese su consulta:</label>
+                <textarea name="" id="Ingrese-consulta" rows="10" cols="30"
+                    placeholder="Ingrese su consulta"></textarea>
+            </div>
+
+            <div class="w-25 border  ">
+                <input class="btn btn-primary " type="submit" value="Enviar Consulta">
+                <input class="btn btn-primary mt-3" type="reset" value="Eliminar formulario">
+                <!-- <button type="button" class="btn btn-outline-success">Enviar Consulta</button> -->
+                <!-- <button type="button" class="btn btn-outline-dark">Limpiar Fromulario</button> -->
+            </div>
 
 
+        </form>
 
-    </header>
+    </main>
 
-    <form action="">
-
-        <div>
-            <label for="nombre-usuario">Nombre y Apellido</label>
-            <input type="text" id="nombre-usuario" placeholder="Maria Perez">
-        </div>
-
-        <div>
-            <label for="email-usuario">Email</label>
-            <input type="email" id="email-usuario" placeholder="email@ejemplo.com">
-        </div>
-
-        <div>
-            <label for="Ingrese-consulta">Ingrese su consulta:</label>
-            <textarea name="" id="Ingrese-consulta" rows="10" cols="30" placeholder="Ingrese su consulta"></textarea>
-        </div>
-
-        <div>
-
-            <input type="submit" value="Enviar Consulta">
-            <input type="reset" value="Limpiar Formulario">
-        </div>
-
-
-    </form>
-
-    <footer>
-
-        <div>
-            <h4>Síguenos en:</h4>
-            <ul>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>Instagram</li>
-                <li>Youtube</li>
-            </ul>
-        </div>
-
-        <div>
-
-            <a href="../index.html">Home</a>
-
-        </div>
-    </footer>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
+
+<footer>
+
+    <div class="flex">
+
+        <div class="subfooter">
+            <h2>Síguenos en:</h2>
+
+            <div class="containerimagenes">
+                <p>Facebook</p>
+                <div class="footer-facebook"></div>
+                <p>Twitter</p>
+                <div class="footer-twitter"></div>
+                <p>Instagram</p>
+                <div class="footer-instagram"></div>
+                <p>Youtube</p>
+                <div class="footer-youtube"></div>
+            </div>
+            <div class="derechos">
+                <p>Copyright ©2022 Ginerbi Belisario</p>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
 
 </html>
