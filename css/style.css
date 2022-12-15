@@ -96,157 +96,7 @@ main nav .nav {
     background-color: white;
 }
 
-@media screen and (max-width: 881px) {
-    main nav .nav {
-        display: block;
-        margin-bottom: 9cm;
-    }
-}
 
-
-main .imagenprincipal {
-    background-image: url("../img/principal.png");
-    height: 50%;
-    width: 80%;
-    margin: 0 auto;
-    border: solid 1px;
-    border-radius: 10px 10px;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation: move 5s
-}
-
-@media screen and (max-width: 881px) {
-
-    main .imagenprincipal {
-        margin-top: 4cm;
-    }
-}
-
-
-
-
-main h2 {
-    position: relative;
-    bottom: 7cm;
-    height: 10%;
-    width: 50%;
-    left: 3%;
-    color: white;
-    font-size: 3.0rem;
-    text-justify: distribute;
-    text-align: center;
-}
-
-@media screen and (max-width: 975px) {
-    main h2 {
-        bottom: 10cm;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    main h2 {
-        font-size: 2rem;
-    }
-}
-
-main .agencias {
-    margin-top: -2cm;
-    height: 9cm;
-    border: solid 5px rgb(186, 85, 211);
-}
-
-main .agencias h3 {
-    color: rgb(186, 85, 211);
-    font-size: 2.5rem;
-    text-align: start;
-    margin-left: 1cm;
-}
-
-@media screen and (max-width:975px) {
-    main .agencias h3 {
-        margin-left: 30%;
-    }
-}
-
-main .agencias .background-agencia {
-    height: 70%;
-    width: 95%;
-    background-color: rgb(186, 85, 211);
-    margin: 15px;
-    border-radius: 10px 10px;
-}
-
-@media screen and (max-width:975px) {
-    main {
-        margin-bottom: 5cm;
-        height: 40cm;
-    }
-
-
-    main .agencias {
-        height: 14cm;
-    }
-
-
-    main .agencias .background-agencia {
-        height: 80%;
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
-
-    main .agencias .background-agencia .tarjeta-agencias1 {
-        width: 20px;
-        height: 20px;
-
-    }
-
-    main .tarjeta-agencias2 {
-        width: 50px;
-        height: 50px;
-    }
-
-    main .tarjeta-agencias3 {
-        width: 50px;
-        height: 50px;
-    }
-
-    main .tarjeta-agencias4 {
-        width: 50px;
-        height: 50px;
-    }
-
-    main .tarjeta-agencias5 {
-        width: 50px;
-        height: 50px;
-    }
-
-    main .tarjeta-agencias6 {
-        width: 50px;
-        height: 50px;
-    }
-
-}
-
-
-@media screen and (max-width:768px) {
-    main {
-        margin-bottom: 5cm;
-        height: 55cm;
-    }
-
-
-    main .agencias {
-        height: 18cm;
-    }
-
-
-    main .agencias .background-agencia {
-        height: 80%;
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-}
 
 main .agencias .background-agencia .tarjeta-agencias1 {
     background-color: rgb(186, 85, 211);
@@ -354,6 +204,50 @@ main .tarjeta-agencias6 {
     margin-top: 0.5cm;
 }
 
+main .agencias {
+    margin-top: -2cm;
+    height: 9cm;
+    border: solid 5px rgb(186, 85, 211);
+}
+
+main .agencias h3 {
+    color: rgb(186, 85, 211);
+    font-size: 2.5rem;
+    text-align: start;
+    margin-left: 1cm;
+}
+
+main .imagenprincipal {
+    background-image: url("../img/principal.png");
+    height: 50%;
+    width: 80%;
+    margin: 0 auto;
+    border: solid 1px;
+    border-radius: 10px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: move 5s
+}
+
+main h2 {
+    position: relative;
+    bottom: 7cm;
+    height: 10%;
+    width: 50%;
+    left: 3%;
+    color: white;
+    font-size: 3.0rem;
+    text-justify: distribute;
+    text-align: center;
+}
+
+main .agencias .background-agencia {
+    height: 70%;
+    width: 95%;
+    background-color: rgb(186, 85, 211);
+    margin: 15px;
+    border-radius: 10px 10px;
+}
 /* main .tarjeta-agencias7 { 
     background-color: deeppink;
     background-image: url("../img/index.png");
@@ -498,6 +392,16 @@ footer .subfooter .derechos {
 
 }
 
+footer .derechos{
+    display: grid;
+    grid-template-columns: auto;
+    align-content: flex-end;
+}
+footer .derechos p{
+    margin: 1cm auto;
+    width: 40%;
+}
+
 footer div .newslatter {
     /*    text-align: right;*/
     /*    float: right;*/
@@ -551,4 +455,175 @@ footer div .newslatter {
     50%{
         text-shadow: 0 25px black;
     }
+}
+
+/* Media query */
+
+@media screen and (max-width: 881px) {
+    main nav .nav {
+        display: block;
+        margin-bottom: 9cm;
+    }
+}
+
+
+
+
+@media screen and (max-width: 881px) {
+
+    main .imagenprincipal {
+        margin-top: 4cm;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 947px){
+   
+    footer .derechos p{
+        width: auto;
+    
+
+    }
+
+}
+
+
+@media screen and (max-width: 975px) {
+    main h2 {
+        bottom: 10cm;
+    }
+}
+
+@media screen and (max-width: 537px) {
+    .containerimagenes {
+        height: 80%;
+    }
+    .footer-twitter{
+        font-size: 50px;
+    }
+
+    .footer-instagram{
+        font-size: 50px;
+    }
+    .footer-youtube{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width:975px) {
+    main .agencias h3 {
+        margin-left: 30%;
+    }
+}
+
+
+
+@media screen and (max-width:975px) {
+    main {
+        margin-bottom: 5cm;
+        height: 40cm;
+    }
+
+
+    main .agencias {
+        height: 14cm;
+    }
+
+
+    main .agencias .background-agencia {
+        height: 80%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    main .agencias .background-agencia .tarjeta-agencias1 {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    main .tarjeta-agencias2 {
+        width: 50px;
+        height: 50px;
+    }
+
+    main .tarjeta-agencias3 {
+        width: 50px;
+        height: 50px;
+    }
+
+    main .tarjeta-agencias4 {
+        width: 50px;
+        height: 50px;
+    }
+
+    main .tarjeta-agencias5 {
+        width: 50px;
+        height: 50px;
+    }
+
+    main .tarjeta-agencias6 {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    main {
+        margin-bottom: 5cm;
+        height: 55cm;
+    }
+
+
+    main .agencias {
+        height: 18cm;
+    }
+
+
+    main .agencias .background-agencia {
+        height: 80%;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    button, input, optgroup, select, textarea{
+        font-size: 12px;
+    }
+
+    .w-25{
+        width: 57%!important;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    footer .d-flex .derechos {
+        display: block;
+        position: relative;
+        top: 10cm;
+        right: 3cm;
+        height: 1cm;
+    }
+    
+}
+@media screen and (max-width:470px) {
+    footer .d-flex .derechos p {
+        font-size: 10px;
+    }
+    
 }
